@@ -7,12 +7,18 @@ if (size == 'S' or size == 's'):
     bill = 15
 elif (size == 'M' or size == 'm'):
     bill = 20
-else:
+elif (size == 'L' or size == 'l'):
     bill = 25
+else:
+    print('invalid size')
+    exit()
 if (pepperoni == 'Y' or pepperoni == 'y'):
-    bill += 2
+    if (size == 'S' or size == 's'):
+        bill += 2
+    else:
+        bill += 3
 
 if extra_cheese == 'Y' or extra_cheese == 'y':
-        bill += 1    
+    bill += 1    
 print(f'your total bill is ${bill}')   
     
