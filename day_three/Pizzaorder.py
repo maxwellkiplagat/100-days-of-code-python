@@ -10,7 +10,7 @@ elif (size == 'M' or size == 'm'):
 elif (size == 'L' or size == 'l'):
     bill = 25
 else:
-    print('invalid size')
+    print('Invalid size! Please choose S, M or L. ')
     exit()
 if (pepperoni == 'Y' or pepperoni == 'y'):
     if (size == 'S' or size == 's'):
